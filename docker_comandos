@@ -1,0 +1,9 @@
+docker login
+docker build -t rachelreuters/kubedev-api-produto:v1 -f .\api-produto\src\Dockerfile .\api-produto\src
+docker push rachelreuters/kubedev-api-produto:v1
+docker build -t rachelreuters/kubedev-api-produto:latest -f .\api-produto\src\Dockerfile .\api-produto\src
+docker push rachelreuters/kubedev-api-produto:latest
+docker build -t rachelreuters/kubedev-api-produto:v2 -f .\api-produto\src\Dockerfile .\api-produto\src
+docker push rachelreuters/kubedev-api-produto:v2
+docker build -t rachelreuters/kubedev-api-produto:latest -f .\api-produto\src\Dockerfile .\api-produto\src
+docker push rachelreuters/kubedev-api-produto:latest
