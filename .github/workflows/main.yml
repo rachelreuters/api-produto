@@ -69,7 +69,7 @@ jobs:
         run: echo Set context kubernetes
         
       - name: Azure Kubernetes set context
-        uses: Azure/aks-set-context@v1
+        uses: Azure/k8s-set-context@v1
         with:
           method: kubeconfig
           kubeconfig: ${{secrets.K8S_CONFIG}}
